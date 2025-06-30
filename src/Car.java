@@ -5,8 +5,8 @@ public class Car implements Comparable<Car> {
     private final String model;
     private final String manufacturer;
     private final int year;
-    private final int mileage;   // км
-    private final double price;  // USD
+    private final int mileage;
+    private final double price;
 
     public Car(String vin, String model, String manufacturer, int year, int mileage, double price) {
         this.VIN = vin;
@@ -18,6 +18,7 @@ public class Car implements Comparable<Car> {
     }
 
     public String getVIN() { return VIN; }
+    
     public String getModel() { return model; }
     public String getManufacturer() { return manufacturer; }
     public int getYear() { return year; }

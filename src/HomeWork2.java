@@ -50,7 +50,7 @@ public class HomeWork2 {
         System.out.println("\n3. equals/hashCode (Сравнение автомобилей)");
         Car c1 = new Car("VIN1", "Camry", "Toyota", 2020, 30_000, 25_000);
         Car c2 = new Car("VIN2", "Model 3", "Tesla", 2023, 10_000, 42_000);
-        Car c3 = new Car("VIN1", "Camry", "Toyota", 2020, 30_000, 25_000); // дубликат VIN
+        Car c3 = new Car("VIN1", "Camry", "Toyota", 2020, 30_000, 25_000);
         Car c4 = new Car("VIN3", "X5", "BMW", 2018, 70_000, 38_000);
 
         Set<Car> cars = new HashSet<>(List.of(c1, c2, c3, c4));
