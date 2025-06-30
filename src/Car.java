@@ -1,12 +1,12 @@
 import java.util.Objects;
 
 public class Car implements Comparable<Car> {
-    private final String VIN;
-    private final String model;
-    private final String manufacturer;
-    private final int year;
-    private final int mileage;
-    private final double price;
+    private String VIN;
+    private String model;
+    private String manufacturer;
+    private int year;
+    private int mileage;
+    private double price;
 
     public Car(String vin, String model, String manufacturer, int year, int mileage, double price) {
         this.VIN = vin;
@@ -18,12 +18,17 @@ public class Car implements Comparable<Car> {
     }
 
     public String getVIN() { return VIN; }
-    
+    public void setVIN(String VIN) {this.VIN = VIN; }
     public String getModel() { return model; }
+    public void setModel(String model) {this.model = model; }
     public String getManufacturer() { return manufacturer; }
+    public void setManufacturer(String manufacturer) {this.manufacturer = manufacturer; }
     public int getYear() { return year; }
+    public void setYear(int year) {this.year = year; }
     public int getMileage() { return mileage; }
+    public void  setMileage(int mileage) {this.mileage = mileage; }
     public double getPrice() { return price; }
+    public void  setPrice(double price) {this.price = price; }
 
     @Override
     public boolean equals(Object o) {
